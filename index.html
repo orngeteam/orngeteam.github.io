@@ -1,47 +1,167 @@
-
-                    
-    
-                    
-    
-                    
-    
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>View Source</title>
-        <link rel="canonical" href="/wiki/pages/viewpage.action?pageId=$action.page.id" />
-        <script>
-window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
-WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"/wiki\"";
-WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:curl.cross-origin-resources"]="false";
-if(window.WRM._dataArrived)window.WRM._dataArrived();</script>
-<link type="text/css" rel="stylesheet" href="//d2t1li5434uzqm.cloudfront.net/bracesondemand.atlassian.net/wiki/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-1130974166/h/54b0b2262b1f7e867f10c15273a1459b/_/download/contextbatch/css/_super/batch.css?assetVersion=1000.0.0-8988a98a519e&amp;externals=__local-default__&amp;relative-url=true" data-wrm-key="_super" data-wrm-batch-type="context" media="all">
-<link type="text/css" rel="stylesheet" href="//d2t1li5434uzqm.cloudfront.net/bracesondemand.atlassian.net/wiki/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-1130974166/h/0a755ea35227a7421e0ea53ab68cc31b/_/download/contextbatch/css/plugin.viewsource,-_super/batch.css?assetVersion=1000.0.0-8988a98a519e&amp;externals=__local-default__&amp;relative-url=true" data-wrm-key="plugin.viewsource,-_super" data-wrm-batch-type="context" media="all">
-<link type="text/css" rel="stylesheet" href="//d2t1li5434uzqm.cloudfront.net/bracesondemand.atlassian.net/wiki/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-1130974166/h/ef2e10548434cc5069403645d2a934b0/_/download/contextbatch/css/page,-_super/batch.css?assetVersion=1000.0.0-8988a98a519e&amp;build-number=6452&amp;externals=__local-default__&amp;relative-url=true" data-wrm-key="page,-_super" data-wrm-batch-type="context" media="all">
-<link type="text/css" rel="stylesheet" href="//d2t1li5434uzqm.cloudfront.net/bracesondemand.atlassian.net/wiki/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-1130974166/h/ef2e10548434cc5069403645d2a934b0/_/download/contextbatch/css/page,-_super/batch.css?assetVersion=1000.0.0-8988a98a519e&amp;build-number=6452&amp;externals=__local-default__&amp;media=print&amp;relative-url=true" media="print" data-wrm-key="page,-_super" data-wrm-batch-type="context">
-<link type="text/css" rel="stylesheet" href="//d2t1li5434uzqm.cloudfront.net/bracesondemand.atlassian.net/wiki/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-1130974166/h/739250c2f7acc71d8485e771a6ecdaa0/_/download/contextbatch/css/editor-content,-_super/batch.css?assetVersion=1000.0.0-8988a98a519e&amp;confluence.table.resizable=true&amp;externals=__local-default__&amp;relative-url=true" data-wrm-key="editor-content,-_super" data-wrm-batch-type="context" media="all">
-<!--[if lte IE 9]>
-<link type="text/css" rel="stylesheet" href="//d2t1li5434uzqm.cloudfront.net/bracesondemand.atlassian.net/wiki/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-1130974166/h/739250c2f7acc71d8485e771a6ecdaa0/_/download/contextbatch/css/editor-content,-_super/batch.css?assetVersion=1000.0.0-8988a98a519e&amp;conditionalComment=lte+IE+9&amp;confluence.table.resizable=true&amp;externals=__local-default__&amp;relative-url=true" data-wrm-key="editor-content,-_super" data-wrm-batch-type="context" media="all">
-<![endif]-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ornge Project Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #2C3E50;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        code {
+            font-family: Consolas, 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
 
-    </head>
+    <h1>Ornge Project Documentation</h1>
 
-    <body class="mceContentBody aui-theme-default wiki-content fullsize">
-        <p>&nbsp;</p>         <h1 style="text-align: center;">BracesOnDemand</h1><h2>Project Overview</h2><p>We are developing our web application using Javascript technologies, React js, and Node js. Our core application development is already done and now we are working on enhancing existing features and accommodating change requests. Bracesondemand is a web application mainly designed for the 3D printer company Formlabs but after the successful integration with one printer company, we are now on verge of integration with another big 3D printer company named as SprintRay. Our main agenda is now to generalize our platform as much as possible so that new integrations require less and less development. Right now we are using Kanban to manage our development. </p><h2>Project Details:</h2><p>We have a <a href="https://bracesondemand.com/">public web app</a> and a <a href="https://app.bracesondemand.com/">private web app</a> for Bracesondemand. The public app is just a CMS and is being used to showcase what Bracesondemand is offering. It also links users to the private app where the actual magic happens. The private app requires signup and login in order to use it. Doctors can have</p><h2>Different Components of the project:</h2><p>Different components of the project </p><p>The project is based on 5 repositories in total.<br />The frontend code base for private portal (React)<br />The frontend code base for public portal (Gatsby)<br />Frontend codebase for UI (React-styled components)<br />Backend codebase for private portal (Node.js)<br />The backend code base for public portal (Strapi)</p><h2>Project Environments:</h2><p>We have staging and production environments for both, private and public applications. </p><h2> Table Of Contents</h2><p>The structure of the repository is as shown below:</p><table data-layout="default" data-local-id="c6506e82-eebf-45b3-b2a4-b4fb4f6c5e47" class="confluenceTable"><colgroup><col style="width: 680.0px;" /></colgroup><tbody><tr><th class="confluenceTh"><p>Topic</p></th></tr><tr><td class="confluenceTd"><p> Team</p></td></tr><tr><td class="confluenceTd"><p> Onboarding</p></td></tr><tr><td class="confluenceTd"><p>Development Process</p></td></tr><tr><td class="confluenceTd"><p>Architecture</p></td></tr><tr><td class="confluenceTd"><p>Code Review Process</p></td></tr><tr><td class="confluenceTd"><p>Release and Deployment</p></td></tr></tbody></table><h2>Team</h2><p>We are a team of 6-8 people. Our main area of expertise is development, testing, and deployment. A brief introduction is as follows. </p><p><strong>Development</strong>: Faisal Imran, Hamza Mukhtar, Hamza Malik, Haseeb Ahmad, Muhammad Ismail, Haniya Masood  <br /><strong>Quality Assurance</strong>: Hassan Jamil<br /><strong>DevOps</strong>: Rizwan Aslam<br /><strong>Frontend UI</strong>: Faheem Sikandar</p><p /><h2>New Developer Onboarding</h2><table data-layout="default" data-local-id="ca16a843-faaa-490e-be1e-62d187cf3f3e" class="confluenceTable"><colgroup><col /><col style="width: 408.0px;" /><col style="width: 310.0px;" /></colgroup><tbody><tr><th class="numberingColumn confluenceTh" /><th class="confluenceTh"><p><strong>Screens</strong></p></th><th data-highlight-colour="#eae6ff" class="confluenceTh"><p><strong>Description</strong></p></th></tr><tr><td class="numberingColumn confluenceTd">1</td><td class="confluenceTd"><p>Engineering Team Introduction</p></td><td class="confluenceTd"><p>A brief introduction</p></td></tr><tr><td class="numberingColumn confluenceTd">2</td><td class="confluenceTd"><p>Tools</p></td><td class="confluenceTd"><p>Tools you need to install on your machine</p></td></tr><tr><td class="numberingColumn confluenceTd">3</td><td class="confluenceTd"><p>Development Machine Setup</p><p /></td><td class="confluenceTd"><p>Development machine setup for this project</p></td></tr><tr><td class="numberingColumn confluenceTd">4</td><td class="confluenceTd"><p>Accounts</p></td><td class="confluenceTd"><p>Accounts you will need access to</p></td></tr></tbody></table><p /><p /><h2><img class="editor-inline-macro" src="https://bracesondemand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro?definition=e2FuY2hvcjp3b3JrLWhvdXJzfQ&amp;locale=en_GB&amp;version=2" data-macro-name="anchor" data-macro-id="07915b309e3df8a5a4d472cd91b634d5" data-macro-default-parameter="work-hours" data-macro-schema-version="1">Work Hours:</h2><p>The team works from 10 am onwards. Timing is flexible and we encourage at least 5 hours of overlap in all team members working hours. </p><h2>Communication</h2><p>The team is using Slack for communication. We are also responsive on our Arbisoft email ids. </p><h2>Important Meetings</h2><p>Below is the table of important events with their timing.</p><table data-layout="default" data-local-id="88b10d08-19ed-422c-acbf-34a9f6d35054" class="confluenceTable"><colgroup><col style="width: 254.0px;" /><col style="width: 253.0px;" /><col style="width: 253.0px;" /></colgroup><tbody><tr><th class="confluenceTh"><p>Meeting</p></th><th class="confluenceTh"><p>Time</p></th><th class="confluenceTh"><p>Required</p></th></tr><tr><td class="confluenceTd"><p>Daily Standup</p></td><td class="confluenceTd"><p>11:00 am to 10:15 am</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>Daily Checkout </p></td><td class="confluenceTd"><p>05:00 pm to 05:15 pm</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>Client Check-in 1</p></td><td class="confluenceTd"><p>07:00 pm to 08:00 pm Tuesday</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>Client Check-in 2</p></td><td class="confluenceTd"><p>07:00 pm to 08:00 pm Thursday</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>Retrospective Meeting</p></td><td class="confluenceTd"><p>05:00 pm to 06:00 pm every 30th</p></td><td class="confluenceTd"><p>Yes</p></td></tr></tbody></table><h1>Tools and Technologies</h1><p>Please install the following tools in order to proceed with the development</p><table data-layout="default" data-local-id="ac7867f0-1bd7-4537-bcf4-47193ba9af0d" class="confluenceTable"><colgroup><col style="width: 254.0px;" /><col style="width: 253.0px;" /><col style="width: 253.0px;" /></colgroup><tbody><tr><th class="confluenceTh"><p>Tool</p></th><th class="confluenceTh"><p>Version</p></th><th class="confluenceTh"><p>Required</p></th></tr><tr><td class="confluenceTd"><p>Visual Studio</p></td><td class="confluenceTd"><p>*</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>Node.js</p></td><td class="confluenceTd"><p>Preferably latest stable</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>Redis </p></td><td class="confluenceTd"><p>Preferably latest stable</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>Global Protect</p></td><td class="confluenceTd"><p>*</p></td><td class="confluenceTd"><p>Optional</p></td></tr><tr><td class="confluenceTd"><p /></td><td class="confluenceTd"><p /></td><td class="confluenceTd"><p /></td></tr></tbody></table><p /><h1><img class="editor-inline-macro" src="https://bracesondemand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro?definition=e2FuY2hvcjpEZXZlbG9wbWVudC1lbnZpcm9ubWVudH0&amp;locale=en_GB&amp;version=2" data-macro-name="anchor" data-macro-id="9444975259f65dfd3f164ac772594603" data-macro-default-parameter="Development-environment" data-macro-schema-version="1">Development Environment</h1><p>All developers should have the tools mentioned above installed on their machines.</p><h2>Git command-line configuration</h2><p>Make sure you have <a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config">configured</a> your user with Git. This information will be used by Git.</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-id="b97d5fe0-abe9-4bb4-af41-d2e54132640d" data-macro-schema-version="1" style="background-image: url(https://bracesondemand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>git config --global user.name "Your Fullname"
-git config --global user.email "Your Email address"</pre></td></tr></table><p>Windows users should use Git bash for a better command-line experience.</p><p>If you are not well-versed in Git then you can read the <a href="https://docs.github.com/en/get-started/quickstart/hello-world">tutorial</a></p><h2>Connecting to GitHub using SSH</h2><p>Refer to this <a href="https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh">link</a> to set up SSH for your GitHub account.</p><h2>Clone the application</h2><p>Clone the application using the following command. We are showing private backend repo for the example.</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-id="466d978a-ad11-40b4-880b-00464c64ecc2" data-macro-schema-version="1" style="background-image: url(https://bracesondemand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>git clone https://github.com/bracesondemand/private-backend.git
-git fetch &amp;&amp; git checkout development</pre></td></tr></table><p>Create a .env file and get its content from <a href="https://docs.google.com/document/d/1zwJug1QWLrnY_sO1Vd5quaVEStsVS56q8sxMFyfbk8Q/edit">here</a></p><h2>Building the application</h2><p>To build the application please run the following command.</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-id="6e9d378e-ef3e-42eb-a546-74b64604bfa1" data-macro-schema-version="1" style="background-image: url(https://bracesondemand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>yarn install
-yarn start</pre></td></tr></table><p>Now use <a href="http://localhost:3000">http://localhost:3000</a> to access the application in the browser. </p><h1>Accounts</h1><p>For a new team member, we need access to the following services.</p><table data-layout="default" data-local-id="1ce45601-56a8-4e6f-8296-62c08a6bd170" class="confluenceTable"><colgroup><col style="width: 258.0px;" /><col style="width: 251.0px;" /><col style="width: 251.0px;" /></colgroup><tbody><tr><th class="confluenceTh"><p>Service</p></th><th class="confluenceTh"><p>Details</p></th><th class="confluenceTh"><p>Required</p></th></tr><tr><td class="confluenceTd"><p>Jira </p></td><td class="confluenceTd"><p>In order to get tasks assigned and work on the tickets</p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>GitHub</p></td><td class="confluenceTd"><p>Member should get a github invite for the respective repo </p></td><td class="confluenceTd"><p>Yes</p></td></tr><tr><td class="confluenceTd"><p>AWS </p></td><td class="confluenceTd"><p>Nice to have IAM role or root user access of AWS console incase we need to manipulate any service. </p></td><td class="confluenceTd"><p>No</p></td></tr><tr><td class="confluenceTd"><p>Bracesondemand</p></td><td class="confluenceTd"><p>User should have an account on <a href="http://qa.bracesondemand.com">qa.bracesondemand.com</a> <br />Eg. <a href="mailto:test@bracesondemand.com">test@bracesondemand.com</a><br />pwd: dev@12345678</p></td><td class="confluenceTd"><p>Optional</p></td></tr></tbody></table><p /><h1><img class="editor-inline-macro" src="https://bracesondemand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro?definition=e2FuY2hvcjpEZXZlbG9wbWVudC1wcm9jZXNzfQ&amp;locale=en_GB&amp;version=2" data-macro-name="anchor" data-macro-id="9fb24985ab3f4f9c8b9889b0f426e676" data-macro-default-parameter="Development-process" data-macro-schema-version="1">Development Process</h1><p>The application is developed using a modified Feature model. Developers cannot commit to the <strong>development</strong> or <strong>master</strong> branch. All features are developed in feature branches. the development branch is used as the base branch for rebasing any feature branch. In case any hotfix is needed, the master branch is used to create a hotfix branch. </p><p>Your machine should have a folder structure like the following:</p><p>|-- arbisoft<br />    |-- bracesondemand<br />    |   |-- private-backend<br />    |   |-- private-frontend<br />    |   |-- public-cms-backend<br />    |   |-- public-cms-frontend<br />    |   |-- ui</p><h2>Commit Template and Branches</h2><p>Set up local git commit template at arbisoft/bracesondemand/</p><ol start="1"><li><p><a href="https://blog.ajduke.in/2016/02/12/change-default-git-commit-message-template/"><u>How to setup the commit template</u></a></p></li><li><p>Template Filename: .commit-template</p></li></ol><table class="wysiwyg-macro" data-macro-name="code" data-macro-id="1cadee49-b51b-46a4-bccf-dc140e84045c" data-macro-schema-version="1" style="background-image: url(https://bracesondemand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>:gitmoji: &lt;title>
+    <h2>Project Overview:</h2>
+    <p>We are developing our web application using JavaScript technologies, including React.js and Node.js. Our core application development is complete, and we are now focused on enhancing existing features and accommodating change requests. <strong>Ornge</strong> is primarily designed for the 3D printer company Formlabs, but after a successful integration, we are now integrating with another major 3D printer company, SprintRay. Our goal is to generalize the platform to minimize development for future integrations. We manage development using Kanban.</p>
 
-&lt;empty-line>
+    <h2>Project Details:</h2>
+    <p><strong>Ornge</strong> has both a public and a private web app. The public app serves as a CMS, showcasing what <strong>Ornge</strong> offers, while the private app, which requires signup and login, handles the core functionality. Doctors can access various services after logging in.</p>
 
-Ticket: https://bracesondemand.atlassian.net/browse/BRAC-000 
+    <h3>Different Components of the Project:</h3>
+    <ul>
+        <li>Frontend codebase for the private portal (React)</li>
+        <li>Frontend codebase for the public portal (Gatsby)</li>
+        <li>Frontend codebase for UI (React-styled components)</li>
+        <li>Backend codebase for the private portal (Node.js)</li>
+        <li>Backend codebase for the public portal (Strapi)</li>
+    </ul>
 
-# Notes
+    <h2>Project Environments:</h2>
+    <p>We have staging and production environments for both the private and public applications.</p>
 
-# -</pre></td></tr></table><p><strong>Commit Title</strong> must follow &lt;<a href="https://gitmoji.carloscuesta.me"><u>gitmoji</u></a>&gt; TICKET-NO: one-liner description</p><p>Examples:</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-id="8b06232b-b6cd-4060-b161-7c6a5c05b9f8" data-macro-schema-version="1" style="background-image: url(https://bracesondemand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>:bug: BRAC-123 fixes some table 
+    <h2>Table of Contents:</h2>
+    <ul>
+        <li>Team</li>
+        <li>Onboarding</li>
+        <li>Development Process</li>
+        <li>Architecture</li>
+        <li>Code Review Process</li>
+        <li>Release and Deployment</li>
+    </ul>
 
-:sparkles: BRAC-123 implements new feature</pre></td></tr></table><p /><p><strong>The branch Name</strong> must follow  &lt;dev-name&gt;/ticket-no-one-liner</p><p>Examples:</p><table class="wysiwyg-macro" data-macro-name="code" data-macro-id="bd1ecde7-6eb5-493d-89da-e65ae58dd5cd" data-macro-schema-version="1" style="background-image: url(https://bracesondemand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_GB&amp;version=2); background-repeat: no-repeat;" data-macro-body-type="PLAIN_TEXT"><tr><td class="wysiwyg-macro-body"><pre>haniya/BRAC-111-fixes-something
-haniya/BRAC-999-something-fixed</pre></td></tr></table><p /><h1><img class="editor-inline-macro" src="https://bracesondemand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro?definition=e2FuY2hvcjpzb2Z0d2FyZS1hcmNoaXRlY3R1cmV9&amp;locale=en_GB&amp;version=2" data-macro-name="anchor" data-macro-id="2b05750db6bc9e1596b237ea207a67fb" data-macro-default-parameter="software-architecture" data-macro-schema-version="1">Software Architecture</h1><p>We built the application using the MVC Architecture style.</p><h2>Architecture Diagram</h2><p>Here is a high-level architecture diagram showing the major components consisting our application.</p><img class="confluence-embedded-image image-center" width="680" loading="lazy" src="https://bracesondemand.atlassian.net/wiki/download/thumbnails/196941/Screenshot%202023-03-14%20at%202.22.04%20AM.png?version=1&amp;modificationDate=1678742579007&amp;cacheVersion=1&amp;api=v2&amp;width=680" data-image-src="https://bracesondemand.atlassian.net/wiki/download/attachments/196941/Screenshot%202023-03-14%20at%202.22.04%20AM.png?version=1&amp;modificationDate=1678742579007&amp;cacheVersion=1&amp;api=v2" data-height="506" data-width="731" data-unresolved-comment-count="0" data-linked-resource-id="33965" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screenshot 2023-03-14 at 2.22.04 AM.png" data-base-url="https://bracesondemand.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="196941" data-linked-resource-container-version="14" data-media-id="e9bdeb35-2a35-48c2-b7c5-1a336102478f" data-media-type="file" title="Software Development > 2023/03/15 > Bracesondemand > Screenshot 2023-03-14 at 2.22.04 AM.png" data-location="Software Development > 2023/03/15 > Bracesondemand > Screenshot 2023-03-14 at 2.22.04 AM.png" data-image-height="886" data-image-width="1280"><h2>Technologies</h2><p>The list of technologies we will use to build the application is as follows:</p><table data-layout="default" data-local-id="8da39d7c-cd97-42cc-b81f-501ddbd27c57" class="confluenceTable"><colgroup><col style="width: 254.0px;" /><col style="width: 253.0px;" /><col style="width: 253.0px;" /></colgroup><tbody><tr><th class="confluenceTh"><p>Technology</p></th><th class="confluenceTh"><p>Purpose</p></th><th class="confluenceTh"><p>Version</p></th></tr><tr><td class="confluenceTd"><p>JavaScript Library</p></td><td class="confluenceTd"><p>React js- Client Side</p></td><td class="confluenceTd"><p>16.9</p></td></tr><tr><td class="confluenceTd"><p>PostgreSQL</p></td><td class="confluenceTd"><p>Database</p></td><td class="confluenceTd"><p>*</p></td></tr><tr><td class="confluenceTd"><p>JavaScript Framework</p></td><td class="confluenceTd"><p>Node js- Server Side</p></td><td class="confluenceTd"><p>&gt;=12</p></td></tr><tr><td class="confluenceTd"><p>Redis</p></td><td class="confluenceTd"><p>In Memory Data storage</p></td><td class="confluenceTd"><p>4.5</p></td></tr></tbody></table><h2>Non-functional Requirements</h2><p>Non-functional requirements for the project are:</p><table data-layout="default" data-local-id="37203234-d642-46f0-9257-0ed62dac3364" class="confluenceTable"><colgroup><col style="width: 254.0px;" /><col style="width: 253.0px;" /><col style="width: 253.0px;" /></colgroup><tbody><tr><th class="confluenceTh"><p>Quality Attribute</p></th><th class="confluenceTh"><p>Description</p></th><th class="confluenceTh"><p>Target</p></th></tr><tr><td class="confluenceTd"><p>Performance</p></td><td class="confluenceTd"><p>Our response time is optimized but not super because our system is designed for a specific type of users, orthodontists in US, using 3D printers (Formlabs, SprintRay)</p></td><td class="confluenceTd"><p>2 seconds</p></td></tr><tr><td class="confluenceTd"><p>Auditability</p></td><td class="confluenceTd"><p>We have maintained user facing error messgaes and error log files </p></td><td class="confluenceTd"><p>error.log, exceptions.log</p></td></tr><tr><td class="confluenceTd"><p>Reliability</p></td><td class="confluenceTd"><p>Our system is reliable and has never shut down due to unknow error/crashes. In case we need to redeploy, we can go live under a minute.</p></td><td class="confluenceTd"><p>Recovery time: less than a minute</p></td></tr><tr><td class="confluenceTd"><p>Usability</p></td><td class="confluenceTd"><p>Our application is an easy to use, user friendly web app. Designers have designed very carefully so that doctors can start the printing experience rightaway. </p></td><td class="confluenceTd"><p>Browsers: Chrome, IE, Firefox<br />Desktop:  1920×1080</p><p>Mobile: 414×896</p></td></tr></tbody></table><h2><img class="editor-inline-macro" src="https://bracesondemand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro?definition=e2FuY2hvcjpjb2RlLXJldmlldy1wcm9jZXNzfQ&amp;locale=en_GB&amp;version=2" data-macro-name="anchor" data-macro-id="41582615926de0fa610cd50f5eceb980" data-macro-default-parameter="code-review-process" data-macro-schema-version="1"><strong>Code Review Process</strong></h2><p>At Bracesondemand, we use code reviews to maintain the quality of our code and products.</p><p>Code reviewers should look at:</p><ul><li><p><strong>Functionality</strong>: Does the code behave as the author likely intended? Is the way the code behaves well for its users?</p></li><li><p><strong>Complexity</strong>: Could the code be made simpler? Would another developer be able to easily understand and use this code when they come across it in the future?</p></li><li><p><strong>Tests</strong>: Does the code have correct and well-designed automated tests?</p></li><li><p><strong>Naming</strong>: Did the developer choose clear names for variables, classes, methods, etc.?</p></li><li><p><strong>Comments</strong>: Are the comments clear and useful?</p></li><li><p><strong>Documentation</strong>: Did the developer also update relevant documentation?</p></li></ul><p>See <a href="https://google.github.io/eng-practices/review/reviewer/"><strong>How To Do A Code Review</strong></a> for more information.</p><h3>Picking the Best Reviewers</h3><p>In general, you want to find the best reviewers you can who are capable of responding to your review within a reasonable period of time and directly working on the code base with you.</p><h3>In-Person Reviews (and Pair Programming)</h3><p>If you pair-programmed a piece of code with somebody who was qualified to do a good code review on it, then that code is considered reviewed.</p><p>You can also do in-person code reviews where the reviewer asks questions and the developer of the change speaks only when spoken to.</p><p /><h1><img class="editor-inline-macro" src="https://bracesondemand.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro?definition=e2FuY2hvcjpyZWxlYXNlLWFuZC1kZXBsb3ltZW50fQ&amp;locale=en_GB&amp;version=2" data-macro-name="anchor" data-macro-id="343dd042b658373ea8954795a116a44b" data-macro-default-parameter="release-and-deployment" data-macro-schema-version="1">Release and Deployment</h1><p>At Bracesondemand, we have a pretty straightforward deployment and release system. Our releases are documented on <a href="https://github.com/bracesondemand/private-backend/releases">GitHub</a> releases. As we are in the maintenance phase, we do not have very frequent releases. </p><img class="confluence-embedded-image image-center" width="680" loading="lazy" src="https://bracesondemand.atlassian.net/wiki/download/thumbnails/196941/Screenshot%202023-03-14%20at%203.29.58%20PM.png?version=1&amp;modificationDate=1678791032675&amp;cacheVersion=1&amp;api=v2&amp;width=680" data-image-src="https://bracesondemand.atlassian.net/wiki/download/attachments/196941/Screenshot%202023-03-14%20at%203.29.58%20PM.png?version=1&amp;modificationDate=1678791032675&amp;cacheVersion=1&amp;api=v2" data-height="196" data-width="1483" data-unresolved-comment-count="0" data-linked-resource-id="197155" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Screenshot 2023-03-14 at 3.29.58 PM.png" data-base-url="https://bracesondemand.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="196941" data-linked-resource-container-version="14" data-media-id="0b2de7d5-bb4a-413c-85c7-e3d868908e61" data-media-type="file" title="Software Development > 2023/03/15 > Bracesondemand > Screenshot 2023-03-14 at 3.29.58 PM.png" data-location="Software Development > 2023/03/15 > Bracesondemand > Screenshot 2023-03-14 at 3.29.58 PM.png" data-image-height="169" data-image-width="1280"><p /><p /><p /><p /><p />
-        <p>&nbsp;</p>
-    </body>
+    <h2>Team:</h2>
+    <p>Our team consists of 6-8 members specializing in development, testing, and deployment.</p>
+    <ul>
+        <li><strong>Development:</strong> Faisal Imran, Hamza Mukhtar, Hamza Malik, Haseeb Ahmad, Muhammad Ismail, Haniya Masood</li>
+        <li><strong>Quality Assurance:</strong> Hassan Jamil</li>
+        <li><strong>DevOps:</strong> Rizwan Aslam</li>
+        <li><strong>Frontend UI:</strong> Faheem Sikandar</li>
+    </ul>
+
+    <h2>New Developer Onboarding:</h2>
+    <h3>Tools Needed:</h3>
+    <ul>
+        <li>Visual Studio</li>
+        <li>Node.js (latest stable version preferred)</li>
+        <li>Redis (latest stable version preferred)</li>
+        <li>Global Protect (optional)</li>
+    </ul>
+
+    <h3>Development Machine Setup:</h3>
+    <p>Ensure the tools listed above are installed. Set up Git using the following commands:</p>
+    <pre><code>git config --global user.name "Your Fullname"
+git config --global user.email "Your Email address"
+</code></pre>
+    <p>For GitHub access, refer to GitHub SSH setup instructions. Clone the application:</p>
+    <pre><code>git clone https://github.com/ornge/private-backend.git
+git fetch && git checkout development
+</code></pre>
+
+    <p>Create a <code>.env</code> file and populate it with the required configurations.</p>
+
+    <h3>Building the Application:</h3>
+    <p>Run the following commands to build the app:</p>
+    <pre><code>yarn install
+yarn start
+</code></pre>
+    <p>Access the application at <a href="http://localhost:3000">http://localhost:3000</a>.</p>
+
+    <h2>Accounts:</h2>
+    <p>For new team members, access is needed for:</p>
+    <ul>
+        <li><strong>Jira:</strong> Task management</li>
+        <li><strong>GitHub:</strong> Repository access</li>
+        <li><strong>AWS:</strong> Optional for service manipulation</li>
+        <li><strong>Ornge:</strong> Account creation on <a href="http://qa.ornge.com">qa.ornge.com</a> (e.g., <code>test@ornge.com</code> with password <code>dev@12345678</code>)</li>
+    </ul>
+
+    <h2>Development Process:</h2>
+    <p>The application uses a modified feature model for development. Developers work in feature branches, with the development branch as the base. For hotfixes, a hotfix branch is created from the master branch. Below is a sample folder structure for development:</p>
+    <pre><code>|-- arbisoft
+    |-- ornge
+        |-- private-backend
+        |-- private-frontend
+        |-- public-cms-backend
+        |-- public-cms-frontend
+        |-- ui
+</code></pre>
+
+    <h2>Commit Template and Branches:</h2>
+    <p>Set up the local Git commit template with the following format:</p>
+    <pre><code>:gitmoji: &lt;title&gt;
+
+&lt;empty-line&gt;
+
+Ticket: https://ornge.atlassian.net/browse/ORNGE-000
+</code></pre>
+
+    <p>Example commit:</p>
+    <pre><code>:sparkles: ORNGE-123 implements new feature
+</code></pre>
+
+    <p>Branch names follow this format:</p>
+    <pre><code>&lt;dev-name&gt;/ticket-no-one-liner
+</code></pre>
+
+    <p>Example:</p>
+    <pre><code>haniya/ORNGE-111-fixes-something
+</code></pre>
+
+    <h2>Software Architecture:</h2>
+    <p><strong>Ornge</strong> uses an MVC architecture. Here’s a high-level diagram of the major components of the application:</p>
+    <!-- Insert architecture diagram here -->
+
+    <h2>Technologies:</h2>
+    <p>The following technologies are used:</p>
+    <ul>
+        <li><strong>React.js</strong> (v16.9) for client-side development</li>
+        <li><strong>Node.js</strong> (>=12) for server-side</li>
+        <li><strong>PostgreSQL</strong> for the database</li>
+        <li><strong>Redis</strong> (v4.5) for in-memory data storage</li>
+    </ul>
+
+    <h2>Non-functional Requirements:</h2>
+    <ul>
+        <li><strong>Performance:</strong> Response time optimized for orthodontists in the US using 3D printers (Formlabs, SprintRay). Target response time: 2 seconds.</li>
+        <li><strong>Auditability:</strong> User-facing error messages and logs are maintained in <code>error.log</code> and <code>exceptions.log</code>.</li>
+        <li><strong>Reliability:</strong> High reliability with a recovery time of less than a minute during redeployment.</li>
+        <li><strong>Usability:</strong> Designed for ease of use, primarily for doctors using desktop and mobile platforms. Supported browsers include Chrome, IE, and Firefox, and devices range from 1920×1080 desktop screens to 414×896 mobile screens.</li>
+    </ul>
+
+    <h2>Code Review Process:</h2>
+    <p>At <strong>Ornge</strong>, code reviews ensure code quality. Reviewers focus on functionality, complexity, tests, naming conventions, comments, and documentation. Pair programming and in-person reviews are encouraged.</p>
+
+    <h2>Release and Deployment:</h2>
+    <p><strong>Ornge</strong> follows a straightforward release and deployment process. Releases are documented on GitHub, and deployments occur as needed, especially during maintenance phases.</p>
+
+</body>
 </html>
