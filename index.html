@@ -31,40 +31,31 @@
     <h1>Ornge Project Documentation</h1>
 
     <h2>Project Overview:</h2>
-    <p>We are developing our web application using JavaScript technologies, including React.js and Node.js. Our core application development is complete, and we are now focused on enhancing existing features and accommodating change requests. <strong>Ornge</strong> is primarily designed for the 3D printer company Formlabs, but after a successful integration, we are now integrating with another major 3D printer company, SprintRay. Our goal is to generalize the platform to minimize development for future integrations. We manage development using Kanban.</p>
+    <p>We are developing our web application using JavaScript, and Python programming language including (React.js and Django). Our core application development is in progress, and we are now focused on adding new features and accommodating change requests. <strong>Ornge</strong> is primarily designed for the 3D printing of braces and aligners. We have our web application that is used to manipulate the 3D scans of jaws, handle all braces, aligners, attachments and many more things that are needed by Orthodontists for treatment planning. There is a wide range of features that Orthodontists can use. We manage development using Jira and our code is managed by Github</p>
 
     <h2>Project Details:</h2>
-    <p><strong>Ornge</strong> has both a public and a private web app. The public app serves as a CMS, showcasing what <strong>Ornge</strong> offers, while the private app, which requires signup and login, handles the core functionality. Doctors can access various services after logging in.</p>
-
     <h3>Different Components of the Project:</h3>
     <ul>
-        <li>Frontend codebase for the private portal (React)</li>
-        <li>Frontend codebase for the public portal (Gatsby)</li>
-        <li>Frontend codebase for UI (React-styled components)</li>
-        <li>Backend codebase for the private portal (Node.js)</li>
-        <li>Backend codebase for the public portal (Strapi)</li>
+        <li>Frontend codebase for the Web portal (Javascript (React, Next))</li>
+        <li>Backend codebase for the public portal (Python (Django))</li>
     </ul>
 
     <h2>Project Environments:</h2>
-    <p>We have staging and production environments for both the private and public applications.</p>
+    <p>For now, as our project is in the initial phase, we have a staging environment only for both the frontend and backend applications.</p>
 
     <h2>Table of Contents:</h2>
     <ul>
         <li>Team</li>
         <li>Onboarding</li>
         <li>Development Process</li>
-        <li>Architecture</li>
         <li>Code Review Process</li>
         <li>Release and Deployment</li>
     </ul>
 
     <h2>Team:</h2>
-    <p>Our team consists of 6-8 members specializing in development, testing, and deployment.</p>
+    <p>Our team consists of 5 members specializing in development.</p>
     <ul>
-        <li><strong>Development:</strong> Faisal Imran, Hamza Mukhtar, Hamza Malik, Haseeb Ahmad, Muhammad Ismail, Haniya Masood</li>
-        <li><strong>Quality Assurance:</strong> Hassan Jamil</li>
-        <li><strong>DevOps:</strong> Rizwan Aslam</li>
-        <li><strong>Frontend UI:</strong> Faheem Sikandar</li>
+        <li><strong>Development:</strong> Faisal Imran, Hamza Mukhtar, Hamza Malik, Haniya Masood, Faheem Sikandar</li>
     </ul>
 
     <h2>New Developer Onboarding:</h2>
@@ -72,7 +63,7 @@
     <ul>
         <li>Visual Studio</li>
         <li>Node.js (latest stable version preferred)</li>
-        <li>Redis (latest stable version preferred)</li>
+        <li>Python (latest)</li>
         <li>Global Protect (optional)</li>
     </ul>
 
@@ -82,7 +73,7 @@
 git config --global user.email "Your Email address"
 </code></pre>
     <p>For GitHub access, refer to GitHub SSH setup instructions. Clone the application:</p>
-    <pre><code>git clone https://github.com/ornge/private-backend.git
+    <pre><code>git clone https://github.com/orngeteam/ornge-frontend.git
 git fetch && git checkout development
 </code></pre>
 
@@ -107,12 +98,10 @@ yarn start
     <h2>Development Process:</h2>
     <p>The application uses a modified feature model for development. Developers work in feature branches, with the development branch as the base. For hotfixes, a hotfix branch is created from the master branch. Below is a sample folder structure for development:</p>
     <pre><code>|-- arbisoft
-    |-- ornge
-        |-- private-backend
-        |-- private-frontend
-        |-- public-cms-backend
-        |-- public-cms-frontend
-        |-- ui
+    |-- ornge-team
+        |-- ornge-frontend
+        |-- ornge-backend
+
 </code></pre>
 
     <h2>Commit Template and Branches:</h2>
@@ -121,11 +110,11 @@ yarn start
 
 &lt;empty-line&gt;
 
-Ticket: https://ornge.atlassian.net/browse/ORNGE-000
+Ticket: https://ornge.atlassian.net/browse/OR-000
 </code></pre>
 
     <p>Example commit:</p>
-    <pre><code>:sparkles: ORNGE-123 implements new feature
+    <pre><code>:sparkles: OR-123 implements new feature
 </code></pre>
 
     <p>Branch names follow this format:</p>
@@ -133,29 +122,8 @@ Ticket: https://ornge.atlassian.net/browse/ORNGE-000
 </code></pre>
 
     <p>Example:</p>
-    <pre><code>haniya/ORNGE-111-fixes-something
+    <pre><code>haniya/OR-111-fixes-something
 </code></pre>
-
-    <h2>Software Architecture:</h2>
-    <p><strong>Ornge</strong> uses an MVC architecture. Here’s a high-level diagram of the major components of the application:</p>
-    <!-- Insert architecture diagram here -->
-
-    <h2>Technologies:</h2>
-    <p>The following technologies are used:</p>
-    <ul>
-        <li><strong>React.js</strong> (v16.9) for client-side development</li>
-        <li><strong>Node.js</strong> (>=12) for server-side</li>
-        <li><strong>PostgreSQL</strong> for the database</li>
-        <li><strong>Redis</strong> (v4.5) for in-memory data storage</li>
-    </ul>
-
-    <h2>Non-functional Requirements:</h2>
-    <ul>
-        <li><strong>Performance:</strong> Response time optimized for orthodontists in the US using 3D printers (Formlabs, SprintRay). Target response time: 2 seconds.</li>
-        <li><strong>Auditability:</strong> User-facing error messages and logs are maintained in <code>error.log</code> and <code>exceptions.log</code>.</li>
-        <li><strong>Reliability:</strong> High reliability with a recovery time of less than a minute during redeployment.</li>
-        <li><strong>Usability:</strong> Designed for ease of use, primarily for doctors using desktop and mobile platforms. Supported browsers include Chrome, IE, and Firefox, and devices range from 1920×1080 desktop screens to 414×896 mobile screens.</li>
-    </ul>
 
     <h2>Code Review Process:</h2>
     <p>At <strong>Ornge</strong>, code reviews ensure code quality. Reviewers focus on functionality, complexity, tests, naming conventions, comments, and documentation. Pair programming and in-person reviews are encouraged.</p>
